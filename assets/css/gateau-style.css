@@ -1,0 +1,40 @@
+
+.popupGateau {
+    /* Pour le placer où on veut sur l'écran, ici en bas à droite de l'écran */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    /* Pour le placer au premier plan */
+    z-index: 5000;
+    
+    padding: 1rem;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    }
+
+.popupGateauBtn {
+    /* Pour mettre les boutons cote à cote  */
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    /* Pour que les boutons soient l'un sous l'autre si responsive pas assez large  */
+    flex-wrap: wrap;
+}
+
+.gateauBtn {
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+    transition: 0.3s ease-in-out;
+}
+
+.gateauBtn:hover {
+    background-color: lightblue;
+    transition: 0.3s ease-in-out;
+}
